@@ -226,7 +226,7 @@ chmod +x airflow.sh`
 
 ## Отладка Airflow внутри контейнера докера с помощью PyCharm
 
-Предварительные условия: Создать проект в PyCharm и скачать ([docker-compose.yaml](https://airflow.apache.org/docs/apache-airflow/2.10.5/docker-compose.yaml).
+Предварительные условия: Создать проект в PyCharm и скачать ([docker-compose.yaml](https://airflow.apache.org/docs/apache-airflow/2.10.5/docker-compose.yaml)).
 
 Шаги:
 
