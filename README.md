@@ -254,7 +254,7 @@ chmod +x airflow.sh`
 
         * Нажмите "Далее" (Next) и следуйте инструкциям, чтобы завершить настройку.
 
-![](https://airflow.apache.org/docs/apache-airflow/stable/_images/add_container_python_interpreter.png)
+![](https://github.com/sx118828/Running-Airflow-in-Docker/blob/main/1_add_container_python_interpreter.png)
 
 Создание индекса интерпретатора может занять некоторое время. 
     
