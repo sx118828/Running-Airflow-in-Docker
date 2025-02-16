@@ -269,7 +269,7 @@ chmod +x airflow.sh`
 
 `ModuleNotFoundError: No module named 'XYZ'`
 
-Файл Docker Compose использует последний образ Airflow ([apache/airflow](https://hub.docker.com/r/apache/airflow). Если вам нужно установить новую библиотеку или системную библиотеку Python, вы можете её [настроить и расширить](https://airflow.apache.org/docs/docker-stack/index.html).
+Файл Docker Compose использует последний образ Airflow ([apache/airflow](https://hub.docker.com/r/apache/airflow)). Если вам нужно установить новую библиотеку или системную библиотеку Python, вы можете её [настроить и расширить](https://airflow.apache.org/docs/docker-stack/index.html).
 
 ## Что дальше?
 
