@@ -115,14 +115,14 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env`
 
 Во втором терминале можно проверить состояние контейнеров и убедиться, что ни один из них не находится в нерабочем состоянии:
 
-`$ docker ps`
+`$ docker ps
 |CONTAINER ID        |IMAGE               |COMMAND              |CREATED           |STATUS            |PORTS                  | NAMES                           |
 |:-------------------|:-------------------|:--------------------|:-----------------|:-----------------|:----------------------|:--------------------------------|
 |247ebe6cf87a|apache/airflow:2.10.5|"/usr/bin/dumb-init …"|3 minutes ago|Up 3 minutes (healthy)|8080/tcp|compose_airflow-worker_1|
 |ed9b09fc84b1|apache/airflow:2.10.5|"/usr/bin/dumb-init …"|3 minutes ago|Up 3 minutes (healthy)|8080/tcp|compose_airflow-scheduler_1|
 |7cb1fb603a98|apache/airflow:2.10.5|"/usr/bin/dumb-init …"|3 minutes ago|Up 3 minutes (healthy)|0.0.0.0:8080->8080/tcp|compose_airflow-webserver_1|
 |74f3bbe506eb|postgres:13 |"docker-entrypoint.s…"|18 minutes ago|Up 17 minutes (healthy)|5432/tcp|compose_postgres_1|
-|0bd6576d23cb|redis:latest |"docker-entrypoint.s…"|10 hours ago|Up 17 minutes (healthy)|0.0.0.0:6379->6379/tcp|compose_redis_1|
+|0bd6576d23cb|redis:latest |"docker-entrypoint.s…"|10 hours ago|Up 17 minutes (healthy)|0.0.0.0:6379->6379/tcp|compose_redis_1|`
 
 ## Доступ к Environment
 
