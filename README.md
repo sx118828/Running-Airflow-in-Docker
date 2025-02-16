@@ -170,9 +170,9 @@ chmod +x airflow.sh`
 Вот пример команды `curl`, которая отправляет запрос на получение списка пулов:
 
 `ENDPOINT_URL="http://localhost:8080/"
-curl -X GET  \
-    --user "airflow:airflow" \
-    "${ENDPOINT_URL}/api/v1/pools"`
+ curl -X GET  \
+     --user "airflow:airflow" \
+     "${ENDPOINT_URL}/api/v1/pools"`
 
 ## Удаление (очистка)
 
@@ -232,13 +232,13 @@ curl -X GET  \
 
     1. Изменить docker-compose.yaml. Добавить следующий блок в раздел, посвященный услугам:
     `airflow-python:
-  <<: *airflow-common
-  profiles:
-      - debug
-  environment:
-      <<: *airflow-common-env
-  user: "50000:0"
-  entrypoint: [ "/bin/bash", "-c" ]`
+          <<: *airflow-common
+          profiles:
+              - debug
+          environment:
+              <<: *airflow-common-env
+          user: "50000:0"
+          entrypoint: [ "/bin/bash", "-c" ]`
 
 
 
