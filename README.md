@@ -260,7 +260,7 @@ chmod +x airflow.sh`
     
     З. Добавить `exec` в docker-compose/command и действия в python service
 
-![](https://airflow.apache.org/docs/apache-airflow/stable/_images/docker-compose-pycharm.png)
+![](https://github.com/sx118828/Running-Airflow-in-Docker/blob/main/2_docker-compose-pycharm.png)
 
 После настройки вы можете отладить код Airflow в контейнерной среде, имитируя локальную установку.
 
