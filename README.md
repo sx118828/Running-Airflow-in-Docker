@@ -254,7 +254,7 @@ chmod +x airflow.sh`
 
         * Нажмите "Далее" (Next) и следуйте инструкциям, чтобы завершить настройку.
 
-[](https://airflow.apache.org/docs/apache-airflow/stable/_images/add_container_python_interpreter.png)
+![](https://airflow.apache.org/docs/apache-airflow/stable/_images/add_container_python_interpreter.png)
 
 
 
