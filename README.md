@@ -87,10 +87,10 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env`
 
 После завершения инициализации вы должны увидеть следующее сообщение:
 
-`airflow-init_1       | Upgrades done`
-`airflow-init_1       | Admin user airflow created`
-`airflow-init_1       | 2.10.5`
-`start_airflow-init_1 exited with code 0`
+* `airflow-init_1       | Upgrades done`
+* `airflow-init_1       | Admin user airflow created`
+* `airflow-init_1       | 2.10.5`
+* `start_airflow-init_1 exited with code 0`
 
 Созданная учетная запись имеет имя пользователя и пароль airflow.
 
