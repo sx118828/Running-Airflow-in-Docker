@@ -240,7 +240,7 @@ chmod +x airflow.sh`
           user: "50000:0"
           entrypoint: [ "/bin/bash", "-c" ]`
 
-`ПРИМЕЧАНИЕ: Этот фрагмент кода создает новую службу под названием "airflow-python" специально для интерпретатора PyCharm в Python. На системе Linux, если вы выполнили команду `echo -e "AIRFLOW_UID=$(id -u)" > .env`, Вам нужно установить имя пользователя: `user: "50000:0"` в `airflow-python` service, чтобы избежать ошибки `Unresolved reference 'airflow'` в PyCharm.`
+ПРИМЕЧАНИЕ: Этот фрагмент кода создает новую службу под названием "airflow-python" специально для интерпретатора PyCharm в Python. На системе Linux, если вы выполнили команду `echo -e "AIRFLOW_UID=$(id -u)" > .env`, Вам нужно установить имя пользователя: `user: "50000:0"` в `airflow-python` service, чтобы избежать ошибки `Unresolved reference 'airflow'` в PyCharm.
   
     2. Настроить интерпретатор PyCharm
 
@@ -255,6 +255,14 @@ chmod +x airflow.sh`
         * Нажмите "Далее" (Next) и следуйте инструкциям, чтобы завершить настройку.
 
 ![](https://airflow.apache.org/docs/apache-airflow/stable/_images/add_container_python_interpreter.png)
+
+Создание индекса интерпретатора может занять некоторое время. 
+    
+    З. Добавить `exec` в docker-compose/command и действия в python service
+
+![](https://airflow.apache.org/docs/apache-airflow/stable/_images/docker-compose-pycharm.png)
+
+После настройки вы можете отладить код Airflow в контейнерной среде, имитируя локальную установку.
 
 
 
