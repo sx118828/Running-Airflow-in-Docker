@@ -231,6 +231,7 @@ chmod +x airflow.sh`
 Шаги:
 
     1. Изменить docker-compose.yaml. Добавить следующий блок в раздел, посвященный услугам:
+    
     `airflow-python:
           <<: *airflow-common
           profiles:
@@ -263,6 +264,12 @@ chmod +x airflow.sh`
 ![](https://github.com/sx118828/Running-Airflow-in-Docker/blob/main/2_docker-compose-pycharm.png)
 
 После настройки вы можете отладить код Airflow в контейнерной среде, имитируя локальную установку.
+
+## FAQ: Часто задаваемые вопросы
+
+`ModuleNotFoundError: No module named 'XYZ'`
+
+Файл Docker Compose использует последний образ Airflow ([apache/airflow](https://hub.docker.com/r/apache/airflow). Если вам нужно установить новую библиотеку или системную библиотеку Python, вы можете её [настроить и расширить](https://airflow.apache.org/docs/docker-stack/index.html).
 
 
 
