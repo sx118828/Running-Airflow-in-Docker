@@ -70,8 +70,9 @@
 
 На Linux, быстрый запуск должен знать свой хост-идентификатор пользователя и должен иметь групповой идентификатор установлен на 0. В противном случае файлы, созданные в дагах, журналах и плагинов будут созданы с правами корневого пользователя. Вы должны убедиться, что они настроены для docker-compose:
 
-`mkdir -p ./dags ./logs ./plugins ./config
-echo -e "AIRFLOW_UID=$(id -u)" > .env`
+`mkdir -p ./dags ./logs ./plugins ./config`
+
+`echo -e "AIRFLOW_UID=$(id -u)" > .env`
 
 Смотрите [переменные среды Docker Compose](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#docker-compose-env-variables)
 
